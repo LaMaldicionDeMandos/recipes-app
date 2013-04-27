@@ -1,0 +1,16 @@
+.project
+.classpath
+target
+.settings
+*~
+.metadata
+.buildpath
+test-output
+META-INF
+bin
+build
+project.properties
+gen
+.externaltoolbuilders
+maven-eclipse.xml
+.DS_STORE
