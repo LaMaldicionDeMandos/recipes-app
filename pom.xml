@@ -46,19 +46,19 @@
 				<activeByDefault>true</activeByDefault>
 			</activation>
 			<properties>
-				<server.port>8080</server.port>
+				<api.port>8080</api.port>
 			</properties>
 		</profile>
 		<profile>
 			<id>qa</id>
 			<properties>
-				<server.port>8080</server.port>
+				<api.port>8080</api.port>
 			</properties>
 		</profile>
 		<profile>
 			<id>prod</id>
 			<properties>
-				<server.port>80</server.port>
+				<api.port>80</api.port>
 			</properties>
 		</profile>
 	</profiles>
@@ -66,6 +66,6 @@
 
 	</properties>
 	<modules>
-		<module>server</module>
+		<module>server-api</module>
 	</modules>
 </project>

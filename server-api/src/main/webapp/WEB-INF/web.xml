@@ -2,7 +2,7 @@
 <web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
 	version="2.4">
-	<display-name>Recetas</display-name>
+	<display-name>Recetas-api</display-name>
 
 	<listener>
 		<listener-class>org.jboss.resteasy.plugins.guice.GuiceResteasyBootstrapServletContextListener</listener-class>
@@ -12,7 +12,7 @@
 	<context-param>
 		<param-name>resteasy.guice.modules</param-name>
 		<param-value>
-			 <!--org.pasut.games.politica.game.modules.PoliticaWebModule-->
+			 org.pasut.recipes.modules.RecipesWebModule
 		</param-value>
 	</context-param>
     <context-param>
@@ -30,7 +30,7 @@
 
 	<context-param>
 		<param-name>resteasy.providers</param-name>
-		<!-- <param-value>org.pasut.games.politica.game.providers.GsonMessageBodyHandler</param-value> -->
+		<param-value>org.pasut.recipes.providers.GsonMessageBodyHandler</param-value>
 	</context-param>
 		
 	<servlet>
